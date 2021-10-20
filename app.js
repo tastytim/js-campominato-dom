@@ -65,6 +65,7 @@ function generateSquads(total) {
 function changecoloronclick() {
   // se il numero è presente nella lista dei numeri generati
   console.log("array" + arrayBombs);
+
   if (arrayBombs.includes(parseInt(this.innerHTML))) {
     console.log("Cliccato bomba = " + parseInt(this.innerHTML));
     // - abbiamo calpestato una bomba
@@ -85,6 +86,8 @@ function changecoloronclick() {
       alert(
         "Hai raggiunto puntegggio massimo : " + (parseInt(totalecelle) - 16)
       );
+      camp.innerText = "";
+      points.innerText = 0;
     }
   }
 }
